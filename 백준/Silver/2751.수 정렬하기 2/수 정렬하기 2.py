@@ -9,4 +9,4 @@ for i in range(N):
 
 n_list.sort()
 for i in n_list:
-    print(i)
+    sys.stdout.write(str(i)+'\n')
