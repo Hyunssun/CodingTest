@@ -5,7 +5,7 @@ N, M = map(int, input().split())
 dict_num = {}
 dict_name = {}
 for i in range(N):
-  name = input()
+  name = sys.stdin.readline().strip()
   dict_num[i] = name
   dict_name[name] = i
 
