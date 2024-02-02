@@ -1,9 +1,9 @@
 function solution(s) {
     var answer = true;
     [...s].map((item)=>{
-        if(isNaN(item)){
+        if(s.length!==4&&s.length!==6||isNaN(item)){
             answer=false
         }
     })
-    return s.length===4||s.length===6?answer:false;
+    return answer;
 }
