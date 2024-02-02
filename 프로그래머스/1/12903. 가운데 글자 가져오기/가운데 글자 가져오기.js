@@ -1,9 +1,4 @@
 function solution(s) {
-    var answer = '';
-    if(s.length%2===0){
-        answer=s.slice(s.length/2-1,s.length/2+1)
-    }else{
-        answer=s[Math.floor(s.length/2)]
-    }
+    var answer = s.substr(Math.ceil(s.length / 2)-1, s.length % 2 === 0 ? 2 : 1);
     return answer;
 }
